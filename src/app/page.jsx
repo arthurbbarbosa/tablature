@@ -1,10 +1,10 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 import { chunk_array } from '../utils/chunk_array.js'
 
-export default function Page() {
+function PageRendered() {
   const [is_visible, set_is_visible] = useState(false)
   const developer_tab_ref = useRef(null)
 
@@ -162,5 +162,13 @@ export default function Page() {
         )
       }
     </>
+  )
+}
+
+export default function Page() {
+  return (
+    <Suspense>
+      <PageRendered />
+    </Suspense>
   )
 }

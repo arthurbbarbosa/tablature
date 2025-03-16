@@ -5,8 +5,5 @@
  */
 export default {
   reactStrictMode: true,
-  output: 'export',
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
+  output: 'export'
 }
