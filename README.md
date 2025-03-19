@@ -14,3 +14,5 @@ Here's a step-by-step guide on how to use the bot:
 	$ if you are using npm: npm install | npm run dev
 	$ if you are using yarn: yarn install | yarn dev
 	```
+
+*To do: Make a support to insert your tabs without a matrix*
